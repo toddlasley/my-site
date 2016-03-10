@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" ng-app="mySiteApp">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap.css" rel="stylesheet"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
 		<link  href="css/style.less" rel="stylesheet/less" type="text/css" />
-		<script src="js/jquery.js" type="text/javascript"></script>
-		<script src="js/bootstrap.js" type="text/javascript"></script>
-		<script src="js/jquery-ui.js" type="text/javascript"></script>
+		<script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/jquery-ui.min.js" type="text/javascript"></script>
 		<script src="js/script.js" type="text/javascript"></script>
-		<script src="js/less.js" type="text/javascript"></script>
+		<script src="js/less.min.js" type="text/javascript"></script>
+		<script src="js/angular.min.js" type="text/javascript"></script>
+		<script src="js/app.js" type="text/javascript"></script>
 		<title>Todd Lasley</title>
 	</head>
 	<body>
@@ -43,43 +45,13 @@
 					</div>
 				</nav>
 				<div id="tabs-1">
-					<p>Prior to coming to Louisville, I lived in Hawesville, a small rural town in western Kentucky, but I am currently a senior at the University of Louisville pursuing a Bachelor's degree in Computer Information Systems. As of now, I am scheduled to receive my degree in December of 2016. I currently work as an IT Intern at SWH Supply Company, a local HVAC parts wholesaler, in Louisville, KY. I am also a member of the Iota-Omicron of Sigma Pi Fraternity on the University of Louisville's campus.</p>
-					
-					<img id="jumbo-pic" class="img-responsive" src="images/orchid-ball-2015.jpg" alt="Orchid Ball 2015" />
+					<about-me></about-me>
 				</div>
 				<div id="tabs-2">
-					<p>I try my best to stay connected socially through sites like Facebook, Twitter, and Instagram, as well as professionally through sites like LinkedIn and GitHub. Let's connect.</p>
-					
-					<div class="social-row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<a href="https://www.facebook.com/trlasl01" target="_blank">
-							<img src="images/facebook-icon.png" class="img-responsive social-icon" />
-						</a>
-						<a href="https://twitter.com/theTODDayShow" target="_blank">
-							<img src="images/twitter-icon.png" class="social-icon img-responsive" />
-						</a>
-					</div>
-					
-					<div class="social-row  col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<a href="https://www.instagram.com/toddrazree/" target="_blank">
-							<img src="images/instagram-icon.png" class="img-responsive social-icon" />
-						</a>
-					</div>
-					
-					<div class="social-row col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<a href="https://www.linkedin.com/in/toddlasley" target="_blank">
-							<img src="images/linkedin-icon.png" class="img-responsive social-icon" />
-						</a>
-						<a href="https://github.com/toddlasley" target="_blank">
-							<img src="images/github-icon.png" class="img-responsive social-icon" />
-						</a>
-					</div>
+					<connect></connect>
 				</div>
 				<div id="tabs-3">
-					<p>This site was developed using the following libraries and tools:</p>
-					
-					<a href="http://getbootstrap.com/" target="_blank"><img src="images/bootstrap.png" class="resource-image" alt="Bootstrap" /></a><br />
-					<a href="https://jquery.com/" target="_blank"><img src="images/jquery.png" class="resource-image" alt="jQuery" /></a><br />
-					<a href="http://lesscss.org/" target="_blank"><img src="images/less.png" class="resource-image" alt="Less" /></a><br />
+					<this-site></this-site>
 				</div>
 			</div>
 		</div>
