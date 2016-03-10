@@ -14,4 +14,11 @@
 			templateUrl: 'html-directives/connect.html'
 		};
 	});
+	
+	app.directive("thisSite", function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'html-directives/this-site.html'
+		};
+	});
 })();
