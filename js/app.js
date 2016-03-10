@@ -7,4 +7,11 @@
 			templateUrl: 'html-directives/about-me.html'
 		};
 	});
+	
+	app.directive("connect", function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'html-directives/connect.html'
+		};
+	});
 })();
