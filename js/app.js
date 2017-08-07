@@ -21,10 +21,4 @@
 			templateUrl: 'html-directives/this-site.html'
 		};
 	});
-	app.directive("portfolio", function(){
-		return {
-			restrict: 'E',
-			templateUrl: 'html-directives/portfolio.html'
-		};
-	});
 })();
