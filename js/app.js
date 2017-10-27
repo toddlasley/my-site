@@ -1,6 +1,13 @@
 (function(){
 	var app = angular.module('mySiteApp', []);
 	
+	app.directive("header", function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'html-directives/header.html'
+		};
+	});
+
 	app.directive("aboutMe", function(){
 		return {
 			restrict: 'E',
@@ -12,13 +19,6 @@
 		return {
 			restrict: 'E',
 			templateUrl: 'html-directives/connect.html'
-		};
-	});
-	
-	app.directive("thisSite", function(){
-		return {
-			restrict: 'E',
-			templateUrl: 'html-directives/this-site.html'
 		};
 	});
 })();

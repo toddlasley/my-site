@@ -1,5 +1,3 @@
-/*Main*/
-
 #profile-pic {
 	width: 150px;
 	height: auto;
@@ -7,23 +5,27 @@
 	border-radius: 5px;
 }
 
-/*About me tab*/
 #jumbo-pic {
 	width: 600px;
 	height: auto;
 	margin: 15px auto;
 }
 
-/*Connect tab*/
 .social-row {
 	text-align: center;
 }
 
+.social-link {
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
 .social-icon {
-	display: inline;
-	margin: 10px 15px;
-	width: 100px;
-	height: 100px;
+	display: inline-block;
+	margin: 0 5px;
+	width: 30px;
+	height: 30px;
 	
 	&:hover {
 		-webkit-filter: brightness(130%);
@@ -31,26 +33,8 @@
 	}
 }
 
-/*This Site tab*/
-#tabs-3 {
-	text-align: center;
-}
-
 .resource-image {
 	width: 200px;
 	height: auto;
 	margin: 15px auto;
-}
-
-/*Portfolio tab*/
-#portfolio-container {
-	padding-bottom: 75px;
-}
-
-.portfolio-item {
-	display: block;
-	border-bottom-style: solid;
-	border-bottom-width: thin;
-	margin: 10px 0 10px;
-	padding: 0 15px;
 }
