@@ -1,6 +1,10 @@
 (function(){
 	var app = angular.module('mySiteApp', []);
 	
+    app.controller('headerController', function() {
+        this.email = 'todd.r.lasley@gmail.com';
+    });
+
 	app.directive("header", function(){
 		return {
 			restrict: 'E',

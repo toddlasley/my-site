@@ -1,9 +1,9 @@
-<div class="jumbotron">
+<div class="jumbotron" ng-controller="headerController as headerCtrl">
     <div class="row">
-        <img id="profile-pic" class="img-responsive col-lg-6 col-md-6 col-sm-12" src="images/straight-outta-hawesville.jpg" alt="Todd Lasley" />
+        <img id="profile-pic" class="img-responsive col-lg-6 col-md-6 col-sm-12" src="images/me.png" alt="Todd Lasley" />
         <div class="col-lg-6 col-md-6 col-sm-12">
             <h1>Todd Lasley</h1>
-            <h4><a href="mailto:todd.r.lasley@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a> todd.r.lasley@gmail.com</h4>
+            <h4><a href="mailto:{{headerCtrl.email}}"><span class="glyphicon glyphicon-envelope"></span>&nbsp;{{headerCtrl.email}}</a></h4>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
             <connect></connect>
