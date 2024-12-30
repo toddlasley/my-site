@@ -6,8 +6,7 @@ on:
       - 'master'
 
 jobs:
-  run_if:
-    if: github.event.created
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
