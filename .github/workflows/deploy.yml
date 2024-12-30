@@ -36,4 +36,4 @@ jobs:
           aws-region: us-east-1
       
       - name: Put new release objects
-        run: aws s3 sync ./out/ s3://tlasley-site --delete
+        run: aws s3 sync ./out/ s3://toddlasley.me --delete
