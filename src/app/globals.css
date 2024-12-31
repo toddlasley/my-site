@@ -35,6 +35,14 @@ a {
   text-decoration: none;
 }
 
+header {
+  background-color: red;
+
+  a.active {
+    color: blue;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
