@@ -17,6 +17,7 @@ export default function Page() {
 
   return (
     <div id="post-container">
+      <div>{blog?.title}</div>
       <div>{blog?.date}</div>
       <zero-md src={`/md/${blog?.markdown}`}></zero-md>
     </div>

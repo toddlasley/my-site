@@ -1,5 +1,6 @@
 type Blog =  {
   id: string;
+  title: string;
   date: string;
   markdown: string;
 }
@@ -7,8 +8,8 @@ type Blog =  {
 
 const blogs = new Map<string, Blog>();
 
-const BLOGS = [
-  { id: '1', date: '2025-12-25', markdown: 'christmas.md' }
+export const BLOGS = [
+  { id: '1', title: 'It all started at Christmas', date: '2025-12-25', markdown: 'christmas.md' }
 ];
 
 export default function getBlogs() {
