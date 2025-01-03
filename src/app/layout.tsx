@@ -35,13 +35,15 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header>
-          <h2>Todd Lasley</h2>
-          <div>
-            {
-              links.map((x) => {
-                return (<Link key={x.label} href={x.href} className={`${pathname === x.href ? 'active' : ''}`}>{x.label}</Link>);
-              })
-            }
+          <div className='header-inner'>
+            <h2>Todd Lasley</h2>
+            <div>
+              {
+                links.map((x) => {
+                  return (<Link key={x.label} href={x.href} className={`${pathname === x.href ? 'active' : ''}`}>{x.label}</Link>);
+                })
+              }
+            </div>
           </div>
         </header>
         <div className='main-container'>

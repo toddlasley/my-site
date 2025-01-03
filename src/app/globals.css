@@ -2,6 +2,7 @@
   --background: #303933;
   --foreground: #c6d9c6;
   --main-padding: 10%;
+  --global-max-width: 1000px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,7 +39,14 @@ a {
 
 header {
   background-color: #5f746d;
-  padding: 0 var(--main-padding) 0;
+  /* padding: 0 var(--main-padding) 0; */
+
+  div.header-inner {
+    max-width: var(--global-max-width);
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 var(--main-padding) 0;
+  }
 
   h2 {
     padding: 15px 0 10px;
@@ -57,7 +65,7 @@ header {
 }
 
 div.main-container {
-  max-width: 1000px;
+  max-width: var(--global-max-width);
   margin: 0 auto;
   display: block;
   padding: 0 var(--main-padding) 0;
