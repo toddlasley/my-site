@@ -1,13 +1,17 @@
 .postContainer {
   padding: 25px 0 0;
 
-  h5 {
+  .postDate {
     margin-bottom: 15px;
   }
 
-  .blogBody {
-    h1, h2, h3, h4, h5, h6, p {
-      margin-bottom: 10px;
-    }
+  .blogBody > h1,
+  .blogBody > h2,
+  .blogBody > h3,
+  .blogBody > h4,
+  .blogBody > h5,
+  .blogBody > h6,
+  .blogBody > p {
+    margin-bottom: 10px;
   }
 }
