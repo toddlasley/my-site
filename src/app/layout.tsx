@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { BLOG_PATH } from './lib/constants/paths';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -16,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 const links = [
-  { label: 'Home', href: '/' },
-  { label: 'Blog', href: '/blog' }
+  { label: 'About', href: '/' },
+  { label: 'Blog', href: BLOG_PATH }
 ];
 
 export default function RootLayout({
@@ -35,13 +36,18 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header>
-          {
-            links.map((x) => {
-              return (<Link key={x.label} href={x.href} className={`${pathname === x.href ? 'active' : ''}`}>{x.label}</Link>);
-            })
-          }
+          <h2>Todd Lasley</h2>
+          <div>
+            {
+              links.map((x) => {
+                return (<Link key={x.label} href={x.href} className={`${pathname === x.href ? 'active' : ''}`}>{x.label}</Link>);
+              })
+            }
+          </div>
         </header>
-        {children}
+        <div className='main-container'>
+          {children}
+        </div>
       </body>
     </html>
   );

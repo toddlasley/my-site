@@ -1,4 +1,3 @@
-///// <reference path="@types/react/index.d.ts" />
 namespace React {
   interface ZeroMarkdownElement {
     src: string;

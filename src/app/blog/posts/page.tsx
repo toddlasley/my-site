@@ -2,6 +2,7 @@
 
 import getBlogs from '@/app/lib/blogs';
 import { notFound, useSearchParams } from 'next/navigation';
+import styles from '@/app/blog/posts/page.module.css';
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -14,11 +15,10 @@ export default function Page() {
 
   const blog = blogs.get(id);
 
-
   return (
-    <div id="post-container">
-      <div>{blog?.title}</div>
-      <div>{blog?.date}</div>
+    <div className={styles.postContainer}>
+      <h3>{blog?.title}</h3>
+      <h5>{blog?.date}</h5>
       <zero-md src={`/md/${blog?.markdown}`}></zero-md>
     </div>
   );

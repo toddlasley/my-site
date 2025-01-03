@@ -2,102 +2,22 @@
 
 import React from 'react';
 
-import Image from 'next/image';
-import styles from './page.module.css';
-// import ZeroMd from 'zero-md';
+import styles from '@/app/page.module.css';
 
-export default function Home() {
-  // customElements.define('zero-md', ZeroMd);
-
+export default function Page() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src='/next.svg'
-          alt='Next.js logo'
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              className={styles.logo}
-              src='/vercel.svg'
-              alt='Vercel logomark'
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-            target='_blank'
-            rel='noopener noreferrer'
-            className={styles.secondary}
-          >
-            Read our docs test build
-          </a>
-        </div>
-        <zero-md src='md/christmas.md'></zero-md>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/file.svg'
-            alt='File icon'
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/window.svg'
-            alt='Window icon'
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href='https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Image
-            aria-hidden
-            src='/globe.svg'
-            alt='Globe icon'
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className='about-container'>
+      <img className={styles.hero} src='/img/me-hagi-beach.jpg' alt='Todd Lasley' />
+      <p>I&apos;m a Seattle-based software engineer that&apos;s just trying to figure it all out, dude, I don&apos;t know.</p>
+      <div className={styles.socials}>
+        <a href='https://bsky.app/profile/toddlasley.me' target='_blank'>Bluesky</a>
+        |
+        <a href='https://www.instagram.com/todd_lasley/' target='_blank'>Instagram</a>
+        |
+        <a href='https://www.linkedin.com/in/toddlasley/' target='_blank'>LinkedIn</a>
+        |
+        <a href='https://github.com/toddlasley' target='_blank'>GitHub</a>
+      </div>
     </div>
   );
 }

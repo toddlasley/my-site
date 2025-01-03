@@ -28,7 +28,8 @@ const eslintConfig = [
       'semi': [
         'error',
         'always'
-      ]
+      ],
+      '@next/next/no-img-element': ['off']
     }
   })
 ];
