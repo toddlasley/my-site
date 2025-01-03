@@ -32,7 +32,6 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <title>Todd Lasley</title>
-        <script type='module' src='https://cdn.jsdelivr.net/npm/zero-md@3?register' async></script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header>
