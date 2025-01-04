@@ -1,4 +1,4 @@
-type Blog =  {
+export type Blog = {
   id: string;
   title: string;
   date: string;
@@ -12,8 +12,9 @@ export const BLOGS = [
   { id: '1', title: 'It all started at Christmas', date: '2025-12-25', markdown: 'christmas.md' }
 ];
 
-export default function getBlogs() {
+export default function useBlogs() {
   if (!blogs.size) {
+    console.log('building blogs');
     for (const b of BLOGS) {
       blogs.set(b.id, b);
     }

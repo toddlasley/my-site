@@ -1,10 +1,10 @@
 'use client';
 
+import Head from 'next/head';
 import { Geist, Geist_Mono } from 'next/font/google';
-import './globals.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { BLOG_PATH } from './lib/constants/paths';
+import { BLOG_PATH } from '../lib/constants/paths';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -21,7 +21,7 @@ const links = [
   { label: 'Blog', href: BLOG_PATH }
 ];
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -29,11 +29,11 @@ export default function RootLayout({
   const pathname = usePathname();
 
   return (
-    <html lang='en'>
-      <head>
+    <>
+      <Head>
         <title>Todd Lasley</title>
-      </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      </Head>
+      <div className={`${geistSans.variable} ${geistMono.variable}`}>
         <header>
           <div className='header-inner'>
             <h2>Todd Lasley</h2>
@@ -49,7 +49,7 @@ export default function RootLayout({
         <div className='main-container'>
           {children}
         </div>
-      </body>
-    </html>
+      </div>
+    </>
   );
 }

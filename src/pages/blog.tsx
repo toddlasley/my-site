@@ -1,11 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { BLOGS } from '../lib/blogs';
-import { POSTS_PATH } from '../lib/constants/paths';
-import styles from '@/app/blog/page.module.css';
+import { BLOGS } from '@/lib/blogs';
+import { POSTS_PATH } from '@/lib/constants/paths';
+import styles from '@/pages/blog.module.css';
 
-export default function Page() {
+export default function Blog() {
   return (
     <div>
       {

@@ -1,10 +1,6 @@
-'use client';
+import styles from '@/pages/index.module.css';
 
-import React from 'react';
-
-import styles from '@/app/page.module.css';
-
-export default function Page() {
+export default function Index() {
   return (
     <div className='about-container'>
       <img className={styles.hero} src='/img/me-hagi-beach.jpg' alt='Todd Lasley' />
