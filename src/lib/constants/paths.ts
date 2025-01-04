@@ -1,3 +1,3 @@
 export const BLOG_PATH = '/blog';
 
-export const POSTS_PATH = BLOG_PATH + '/post';
+export const POSTS_PATH = BLOG_PATH + '/post/';
