@@ -3,8 +3,8 @@
 import Head from 'next/head';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { BLOG_PATH } from '../lib/constants/paths';
+import { useRouter } from 'next/router';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -26,7 +26,8 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathname = usePathname();
+  const router = useRouter();
+  console.log(router.asPath);
 
   return (
     <>
@@ -40,7 +41,7 @@ export default function Layout({
             <div>
               {
                 links.map((x) => {
-                  return (<Link key={x.label} href={x.href} className={`${pathname === x.href ? 'active' : ''}`}>{x.label}</Link>);
+                  return (<Link key={x.label} href={x.href} className={`${router.asPath === x.href ? 'active' : ''}`}>{x.label}</Link>);
                 })
               }
             </div>
