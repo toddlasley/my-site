@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "isomorphic-dompurify": "^2.19.0",
+    "isomorphic-dompurify": "^2.25.0",
     "marked": "^15.0.5",
-    "next": "15.1.3",
+    "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
