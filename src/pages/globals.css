@@ -24,6 +24,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  del {
+    color: #9fac9f;
+    text-decoration-line: line-through;
+  }
 }
 
 * {
