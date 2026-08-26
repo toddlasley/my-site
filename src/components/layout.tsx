@@ -27,7 +27,6 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   const router = useRouter();
-  console.log(router.asPath);
 
   return (
     <>
