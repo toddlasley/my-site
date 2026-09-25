@@ -9,7 +9,8 @@ export type Blog = {
 const blogs = new Map<string, Blog>();
 
 export const BLOGS = [
-  { id: '1', title: 'It all started at Christmas', date: '2024-12-25', markdown: 'christmas.md' }
+  { id: '1', title: 'It all started at Christmas', date: '2024-12-25', markdown: 'christmas.md' },
+  { id: '2', title: 'Personal requiem for the Halo franchise', date: '2026-09-24', markdown: 'requiem-for-halo.md' }
 ];
 
 export default function useBlogs() {
